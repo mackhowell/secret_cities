@@ -1,0 +1,22 @@
+<% for post in @posts %>
+
+
+<div style="text-align: center; color: white;">
+    <h4>
+    <%= post.username %>
+    </h4>
+    <p>
+    <%= post.secret %>
+    </p>
+    <em style="color:gray;">
+    posted
+    <%= post.created_at.month %> - <%= post.created_at.day %> - <%= post.created_at.year %>
+    </em>
+    <br></br>
+    <br></br>
+</div>
+
+
+<% end %>
+
+</body>

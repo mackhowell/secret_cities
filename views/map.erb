@@ -1,0 +1,118 @@
+
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { padding: 0; }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBv9r4rcnszGW9L3oSnSOjcLIczzQGZwIM&sensor=true">
+    </script>
+    <script type="text/javascript">
+    
+    var marker;
+    var infowindow;
+    
+    
+function initialize() {
+      var latlng = new google.maps.LatLng(40.735161, -73.992774);
+      var options = {
+        zoom: 13,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      
+      
+      var map = new google.maps.Map(document.getElementById("map_canvas"), options);
+      var html = "<table>" +
+                 "<tr><td>User:</td> <td><input type='text' id='username'/> </td> </tr>" +
+                 "<tr><td>Confession:</td> <td><input type='text' id='secret'/></td> </tr>" +
+                 "<tr><td></td><td><input type='button' value='Save and See Confessions' onclick='saveData()'/></td></tr>" ;
+                 //"<tr><td></td><td><input type='button' value='See Full Map' onclick='seeMap()'/></td></tr>";
+    infowindow = new google.maps.InfoWindow({
+     content: html
+    });
+
+    google.maps.event.addListener(map, "click", function(event) {
+        marker = new google.maps.Marker({
+          position: event.latLng,
+          map: map
+        });
+        google.maps.event.addListener(marker, "click", function() {
+          infowindow.open(map,marker);
+        });
+    });
+    }
+
+
+
+
+
+    function saveData() {
+      var username = escape(document.getElementById("username").value);
+      var secret = escape(document.getElementById("secret").value);
+      var latlng = marker.getPosition();
+
+      var url = "http://itp.nyu.edu/~rmh398/sinatra/final/savePost?username=" + username + "&secret=" + secret +
+                "&lat=" + latlng.lat() + "&lng=" + latlng.lng();
+      downloadUrl(url, function(data, responseCode) {
+      //console.log(data, responseCode);
+        if (responseCode == 200) {
+          infowindow.close();
+          window.location = "http://itp.nyu.edu/~rmh398/sinatra/final/secretmap";
+        }
+      });
+    }
+ 
+
+
+    function downloadUrl(url, callback) {
+      var request = window.ActiveXObject ?
+          new ActiveXObject('Microsoft.XMLHTTP') :
+          new XMLHttpRequest;
+
+      request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+          request.onreadystatechange = doNothing;
+          callback(request.responseText, request.status);
+        }
+      };
+
+      request.open('GET', url, true);
+      request.send(null);
+    }
+
+    function doNothing() {}
+
+
+
+
+
+      
+      
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="height: 600; width:900; margin-left: auto; margin-right:auto;"></div>
+    
+    <a href="http://itp.nyu.edu/~rmh398/sinatra/final/board" title="Feed Link" style="background-image:url(http://itp.nyu.edu/~rmh398/sinatra/final/public/secret_cities_FEED2.png);
+display:block;
+height:44px;
+text-indent:-9999px;
+margin-left: auto;
+margin-right: auto;
+float:right;
+margin-right:260;
+margin-top:15;
+width:189;"> FEED link </a>
+
+<a href="http://itp.nyu.edu/~rmh398/sinatra/final/about" title="About Link" style="background-image:url(http://itp.nyu.edu/~rmh398/sinatra/final/public/secret_cities_ABOUT2.png);
+display:block;
+height:44px;
+text-indent:-9999px;
+margin-left: auto;
+margin-right: auto;
+float:left;
+margin-left:260;
+margin-top:15;
+width:189;"> ABOUT link </a>

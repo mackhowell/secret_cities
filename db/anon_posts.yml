@@ -1,0 +1,157 @@
+--- 
+- username: gilgamesh
+  lng: -73.9758653543701
+  secret: "i walked by a person breaking into a store and didn't do anything. not even down the block. "
+  created_at: 2012-10-18 17:28:51 -04:00
+  lat: 40.7246241989136
+  id: 1
+- username: JD83
+  lng: -73.9802856361363
+  secret: Kicked a squirrel
+  created_at: 2012-10-18 17:32:48 -04:00
+  lat: 40.7307058280732
+  id: 3
+- username: guesswho
+  lng: -73.9899649963642
+  secret: I got free taco from a Korean taco truck. tehehehehe.
+  created_at: 2012-10-18 17:32:54 -04:00
+  lat: 40.737490460438
+  id: 4
+- username: tadaaa
+  lng: -73.9964881260691
+  secret: I saw a panda here
+  created_at: 2012-10-18 17:33:49 -04:00
+  lat: 40.7302061910129
+  id: 5
+- username: J
+  lng: -73.9881459686709
+  secret: ShakeShack is NOT yummy at all!!!
+  created_at: 2012-10-18 17:34:24 -04:00
+  lat: 40.7414237075344
+  id: 6
+- username: sam's friend
+  lng: -73.9792556665649
+  secret: he peed in the elevatorr
+  created_at: 2012-10-18 17:36:34 -04:00
+  lat: 40.7527186272699
+  id: 7
+- username: too_drunk
+  lng: -73.980714788269
+  secret: puked all over the street right here...
+  created_at: 2012-10-18 17:37:04 -04:00
+  lat: 40.6898962372407
+  id: 8
+- username: cant-tell-you
+  lng: -73.9748139284363
+  secret: i got drunk here
+  created_at: 2012-10-18 17:37:10 -04:00
+  lat: 40.7711978984614
+  id: 9
+- username: Look Ma
+  lng: -73.9935679338684
+  secret: No Hands!
+  created_at: 2012-10-18 18:13:49 -04:00
+  lat: 40.7292098637004
+  id: 9
+- username: whale eater
+  lng: -21.9489800700119
+  secret: eating whale. yum.
+  created_at: 2012-10-18 18:16:28 -04:00
+  lat: 64.1516472499254
+  id: 10
+- username: ttyue
+  lng: -73.9944906137695
+  secret: Saw a guy manhandling/abusing his gf walking down the street and didn't  do anything about it.
+  created_at: 2012-10-18 19:16:01 -04:00
+  lat: 40.7295616839464
+  id: 11
+- username: comm lab web
+  lng: -73.9974279312461
+  secret: we know sinatraa!
+  created_at: 2012-10-18 19:24:26 -04:00
+  lat: 40.7525885888035
+  id: 12
+- username: tommy
+  lng: -73.9844484232178
+  secret: laughed at a grandma
+  created_at: 2012-10-18 20:02:40 -04:00
+  lat: 40.7641611036353
+  id: 13
+- username: you don't know me?!
+  lng: -73.9977521799316
+  secret: i mean...it's me!!!
+  created_at: 2012-10-18 20:12:26 -04:00
+  lat: 40.7278764760253
+  id: 14
+- username: fargbarger
+  lng: -73.9926738642513
+  secret: I wish I knew where to buy acid
+  created_at: 2012-10-18 20:35:46 -04:00
+  lat: 40.7302830587643
+  id: 15
+- username: louisa bo
+  lng: -74.0095538995972
+  secret: i made 3 poops today!!! and they leaked out of my diaper...
+  created_at: 2012-10-18 21:14:05 -04:00
+  lat: 40.7148989423083
+  id: 16
+- username: Early Riser
+  lng: -73.9914007089844
+  secret: Saw a man covered in vomit and didn't tell him he had chunks still in his beard
+  created_at: 2012-10-19 00:18:27 -04:00
+  lat: 40.7299822406816
+  id: 17
+- username: "\"aaron\""
+  lng: -73.9412755869141
+  secret: pooped
+  created_at: 2012-10-19 12:07:27 -04:00
+  lat: 40.7081652400332
+  id: 18
+- username: Nonchalant
+  lng: -73.986658563446
+  secret: I threw up while walking with a group of friends
+  created_at: 2012-10-19 16:39:15 -04:00
+  lat: 40.7222499362628
+  id: 20
+- username: me
+  lng: -73.9956922434082
+  secret: "I can't believe I found you. "
+  created_at: 2012-10-19 20:19:21 -04:00
+  lat: 40.7293074276033
+  id: 20
+- username: wonder &  nicks
+  lng: -73.9929242037048
+  secret: I got pulled over and got three tickets. Then i got another because the cop spelled hicks wrong and i didnt pay tit
+  created_at: 2012-10-21 18:23:18 -04:00
+  lat: 40.7010648382002
+  id: 21
+- username: ""
+  lng: -73.9902849100342
+  secret: ""
+  created_at: 2012-10-22 12:04:28 -04:00
+  lat: 40.7205911545673
+  id: 22
+- username: ""
+  lng: 
+  secret: 
+  created_at: 2012-11-02 08:24:49 -04:00
+  lat: 
+  id: 23
+- username: your secret admirer
+  lng: -73.9936537645569
+  secret: hey qt
+  created_at: 2012-11-17 21:07:31 -05:00
+  lat: 40.7265105389968
+  id: 24
+- username: 
+  secret: 
+  lng: 
+  created_at: 2012-12-06 19:16:23 -05:00
+  lat: 
+  id: 25
+- username: ""
+  created_at: 2012-12-06T19:16:23-05:00
+  lng: 
+  secret: 
+  lat: 
+  id: 26
